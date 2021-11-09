@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MessagesComponent } from './messages/messages.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ContactReducer } from './store/reducers/contact.reducer';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactReducer } from './store/reducers/contact.reducer';
     ContactsComponent,
     DashboardComponent,
     MessagesComponent,
-    SettingsComponent
+    SettingsComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

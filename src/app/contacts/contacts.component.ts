@@ -18,6 +18,7 @@ export class ContactsComponent implements OnInit {
   }
 
   addContact(data: Contact) {
+    console.log(this.contacts);
     this.store.dispatch({
       type: 'ADD_CONTACT',
       payload: <Contact> {
