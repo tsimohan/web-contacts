@@ -1,1 +1,18 @@
-<p>contacts works!</p>
+<button (click) = "addContact({name: 'John Doe', email: 'johndoe@example.com', phone: 9876543210})">Add Contact</button>
+
+<table class="table table-hover" *ngIf="contacts">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contact of contacts | async">
+            <td>{{contact.name}}</td>
+            <td>{{contact.email}}</td>
+            <td>{{contact.phone}}</td>
+        </tr>
+    </tbody>
+</table>
